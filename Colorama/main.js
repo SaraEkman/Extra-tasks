@@ -22,25 +22,20 @@ const button = document.querySelector("button");
 const header = document.querySelector("h1");
 const ul = document.querySelector("ul");
 
-input.addEventListener("input",(e)=> {
+input.addEventListener("input", (e) => {
     console.log(e.data);
 
     color.forEach(oneCol => {
-        
-        
-    })
-})
 
 
-
+    });
+});
 
 button.addEventListener("click", () => {
 
     for (let i = 0; i < color.length; i++) {
         console.log(color[i]);
         let oneColor = color[i];
-
-        
 
         let inputVal = input.value;
 
@@ -59,7 +54,7 @@ color.forEach(oneCol => {
     let li = document.createElement("li");
     li.innerText = oneCol;
     ul.appendChild(li);
-})
-ul.style.width = "60vw"
-ul.style.height = "50vh"
-ul.style.overflowY = "scroll"
+});
+ul.style.width = "60vw";
+ul.style.height = "50vh";
+ul.style.overflowY = "scroll";
